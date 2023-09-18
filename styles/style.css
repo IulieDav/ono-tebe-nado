@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 92px 49px 51px;
+    padding: 87px 49px 88px 51px;
 }
 
 .header__links-list {
@@ -39,11 +39,96 @@
 }
 
 .header__address {
-    width: 240px;
+    max-width: 240px;
     justify-self: end;
     font-family: Raleway;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 24.3px;
+}
+
+.cover {
+    position: relative;
+    width: 1440px;
+    height: 757px;
+    flex-shrink: 0;
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background: #000;
+}
+
+.cover__title {
+    width: 1340px;
+    height: 355px;
+    position: absolute;
+    inset: 165px 50px 237px;
+    color: #FFF;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+}
+
+.aligned-text {
+    display: block;
+}
+
+.aligned-text_center {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.aligned-text_right {
+    padding-top: 20px;
+    text-align: end;
+}
+
+.letter-spacing {
+    letter-spacing: 30px;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 60px;
+}
+
+.cover__description {
+    display: flex;
+    gap: 78px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+.cover__description-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    word-spacing: ;
+}
+
+.bet-button {
+    width: 257px;
+    height: 52px;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    text-transform: uppercase;
 }
