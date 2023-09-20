@@ -6,7 +6,7 @@ body {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 87px 49px 88px 51px;
+    padding: 90px 49px 88px 53px;
 }
 
 .header__links-list {
@@ -67,12 +67,11 @@ body {
     height: 100%;
     opacity: 0.6;
     background: #000;
-    z-index: 1;
 }
 
 .cover__title {
     position: absolute;
-    inset: 165px 20px 237px 50px;
+    inset: 165px 20px 237px 52px;
     color: #FFF;
     font-size: 100px;
     font-style: normal;
@@ -222,8 +221,10 @@ body {
 .about {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 240px 96px 119px;
-    padding: 0 50px;
+    grid-template-rows: 1fr 1fr;
+    padding: 5px 50px 0px 50px;
+    column-gap: 18px;
+    row-gap: 8px;
 }
 
 .about__logo {
@@ -242,10 +243,21 @@ body {
 }
 
 .about__title {
+    align-self: center;
     font-size: 40px;
     text-transform: uppercase;
 }
 
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
 .about__text {
     font-size: 20px;
+}
+
+.footer {
+    display: flex;
 }
