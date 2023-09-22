@@ -20,7 +20,7 @@ html {
 .header__links-list {
     display: flex;
     list-style: circle;
-    gap: 32px;   
+    gap: 32px;
 }
 
 .header__link_active .header__link {
